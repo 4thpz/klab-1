@@ -44,7 +44,7 @@ ul li{
 .home{
   width: 80%;
   margin-left: 20%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.3)), url(di.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.918),rgba(0, 0, 0, 0.562)), url(di.jpg);
   height: 100vh;
   background-size: cover;
   text-align: center;
@@ -80,6 +80,7 @@ ul li{
     margin-left: 20%;
     background-color: #212529;
     height: 100vh;
+    padding-bottom: 50px;
 }
 .abhe h1{
     font-size: 128px;
@@ -119,9 +120,220 @@ ul li{
 }
 .abmain p{
     color: #909283;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: 17px;
     
 }
 span{
     color: #20C997;
+}
+.info{
+ width: 30%;
+}
+.info h4{
+margin-top: 10px;
+}
+.info hr{
+    margin-top: 20px;
+    border: 1px solid gray;
+    width: 100%;
+}
+.info button{
+    padding: 10px 40px;
+    margin-top: 50px;
+    background-color: #20C997;
+    color: #fff;
+    border: transparent;
+    font-weight: bold;
+}
+.pro{
+    display: flex;
+    justify-content: space-around;
+  margin-top: 60px;
+}
+.pro h1{
+    color: #909283;
+    text-align: center;
+    font-size: 40px;
+   
+}
+.pro h3{
+    color: #fff;
+ 
+}
+/* What I Do Section */
+.do{
+    margin-left: 20%;
+    background-color: #343a40;
+    height: 100vh;
+}
+.dohe h1{
+    font-size: 128px;
+    text-align: center;
+    color: #3e4449;
+    user-select: none;
+    font-family: sans-serif;
+    padding-top: 5%;
+}
+.dohe h2{
+    position: relative;
+    top: -100px;
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    
+   
+}
+.dohe hr{
+    position: relative;
+    top: -90px;
+  width: 10%;
+  margin: auto;
+ border: 2px solid #20C997;
+}
+.domain{
+    display: flex;
+  margin-left: 30px;
+  justify-content: space-around;
+}
+.domain i{
+    color: #20C997;
+    font-size: 30px;
+    background-color: #111418;
+    padding: 15px;
+    border-radius: 10px;
+}
+.domain h1{
+    margin-left: 80px;
+    position: relative;
+    top: -57px;
+  color: #fff;
+}
+.domain p{
+    margin-left: 80px;
+    position: relative;
+    top: -55px;
+    color: gray;
+}
+.left{
+    width: 40%;
+}
+.right{
+    width: 40%;
+}
+
+/* Resume Section */
+.resume{
+    margin-left: 20%;
+    background-color: #212529;
+    height: 100vh;
+    padding-bottom: 8%;
+}
+.remain{
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-evenly;
+}
+.ex{
+    width: 40%;
+}
+.ed{
+    width: 40%;
+}
+.hig{
+    background-color: #dc3545;
+    color: #fff;
+    padding: 3px;
+    width: 15%;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+.back{
+    background-color: #111418;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    height: 35%;
+    border-radius: 10px;
+}
+.back h4{
+    color: #20C997;
+    padding: 10px;
+}
+.back p{
+    color: gray;
+}
+.back li{
+    color: gray;
+}
+.ex h1{
+color: #fff;
+}
+.ed h1{
+    color: #fff;
+}
+/* Contact Section */
+.contact{
+    margin-left: 20%;
+    background-color: #343a40;
+    height: 100vh;
+}
+.comain{
+    display: flex;
+    margin-left: 30px;
+    justify-content: space-between;
+    margin-right: 30px;
+    color: #fff;
+}
+.add{
+    width: 20%;
+}
+.msg{
+    width: 80%;
+}
+textarea{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #282d31;
+    border: transparent;
+    border-radius: 5px;
+}
+input{
+    width: 45%;
+    padding: 15px;
+    background-color: #282d31;
+    border: transparent;
+    border-radius: 5px;
+}
+.fr p{
+    position: relative;
+    top: -20px;
+    margin-left: 30px;
+    color: #909283;
+}
+.fr{
+    margin-top: 60px;
+}
+.add h1{
+    margin-bottom: 10px;
+}
+.follow h1{
+    margin-top: 10px;
+    
+}
+.follow i{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.msg button{
+    padding: 10px 40px;
+    margin-top: 5px;
+    background-color: #20C997;
+    color: #fff;
+    border: transparent;
+    font-weight: bold;
+    
 }
