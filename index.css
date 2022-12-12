@@ -390,6 +390,7 @@ input{
         font-size: 16px;
     }
     .small{
+        display: block;
         background-color: #343a40;
         padding-bottom: 20%;
     }
@@ -401,7 +402,7 @@ input{
         border-right: 15px solid gray;
         border-top: 15px solid gray;
         margin-left: 10%;
-        border-style: ;
+        
     }
     .home{
         display: none;
