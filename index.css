@@ -3,6 +3,9 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+.min{
+    display: none;
+}
 .fixed img{
     height: 200px;
     width: 200px;
@@ -44,8 +47,9 @@ ul li{
 .home{
   width: 80%;
   margin-left: 20%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.918),rgba(0, 0, 0, 0.562)), url(di.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)), url(di.jpg);
   height: 100vh;
+  background-position: top;
   background-size: cover;
   text-align: center;
  
@@ -79,7 +83,7 @@ ul li{
 .about{
     margin-left: 20%;
     background-color: #212529;
-    height: 100vh;
+  
     padding-bottom: 50px;
 }
 .abhe h1{
@@ -114,6 +118,8 @@ ul li{
     display: flex;
     justify-content: space-around;
     color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .desc{
     width: 60%;
@@ -165,7 +171,7 @@ margin-top: 10px;
 .do{
     margin-left: 20%;
     background-color: #343a40;
-    height: 100vh;
+  
 }
 .dohe h1{
     font-size: 128px;
@@ -193,7 +199,7 @@ margin-top: 10px;
 }
 .domain{
     display: flex;
-  margin-left: 30px;
+  margin-right: 10px;
   justify-content: space-around;
 }
 .domain i{
@@ -226,7 +232,7 @@ margin-top: 10px;
 .resume{
     margin-left: 20%;
     background-color: #212529;
-    height: 100vh;
+    
     padding-bottom: 8%;
 }
 .remain{
@@ -278,8 +284,8 @@ color: #fff;
 /* Contact Section */
 .contact{
     margin-left: 20%;
-    background-color: #343a40;
-    height: 100vh;
+    background-color: #212529;
+    padding-bottom: 20px;
 }
 .comain{
     display: flex;
@@ -336,4 +342,190 @@ input{
     border: transparent;
     font-weight: bold;
     
+}
+.port{
+    margin-left: 20%;
+    background-color: #343a40;
+   padding-bottom: 20px;
+}
+.portmain{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.ll{
+    flex: 31%;
+    max-width: 31%;
+    padding: 0 3px;
+  margin-left: 10px;
+}
+.ll img{
+    margin-top: 8px;
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.small{
+    display: none;
+}
+@media screen and (max-width:767px){
+    /* Home Responsive */
+    .min{
+        display: flex;
+       padding: 10px;
+        justify-content: space-between;
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        z-index: 1;
+        
+    }
+    .bar{
+        padding-right: 20px;
+    }
+    .icons a{
+        margin-left: 10px;
+    }
+    .min h2{
+        font-size: 16px;
+    }
+    .small{
+        background-color: #343a40;
+        padding-bottom: 20%;
+    }
+    .small img{
+        height: 313px;
+        width: 313px;
+        border-radius: 50%;
+        border-bottom: 15px solid gray;
+        border-right: 15px solid gray;
+        border-top: 15px solid gray;
+        margin-left: 10%;
+        border-style: ;
+    }
+    .home{
+        display: none;
+        margin-left: 0;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)), url(1.jpg);
+        background-size: cover;
+      }
+      .homeco{
+        padding-top: 20%;
+        text-align: center;
+      }
+.about{
+    margin-left: 0;
+}
+.abmain{
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.abhe h1{
+    font-size: 48px;
+    text-align: center;
+    color: #282d31;
+    user-select: none;
+    font-family: sans-serif;
+    padding-top: 10%;
+}
+.abhe h2{
+    position: relative;
+    top: -40px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    
+   
+}
+.abhe hr{
+    position: relative;
+    top: -40px;
+  width: 10%;
+  margin: auto;
+ border: 2px solid #20C997;
+}
+.desc{
+    width: 100%;
+   
+}
+.info{
+    width: 100%;
+}
+.fixed{
+  display: none;
+}
+.do{
+margin-left: 0;
+}
+.resume{
+margin-left: 0;
+}
+.contact{
+margin-left: 0;
+}
+.port{
+   margin-left: 0; 
+}
+/*  */
+.domain{
+    display: inline-block;
+  margin-left: 30px;
+ 
+}
+.left{
+width: 100%;
+}
+.right{
+    width: 100%;
+}
+.remain{
+    display: inline-block;
+    margin-left: 20px;
+   margin-right: 20px;
+  }
+.ed{
+    width: 100%;
+}
+.ex{
+    width: 100%;
+}
+.ex h1{
+    margin-top: 20px;
+}
+.portmain{
+    display: inline-block;
+    margin: 10px;
+}
+.ll{
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 3px;
+  margin-left: 0;
+}
+.comain{
+    display: inline-block;
+  
+    color: #fff;
+}
+.add{
+    width: 100%;
+}
+.msg{
+    width: 100%;
+    margin-top: 50px;
+   
+}
+.msg h1{
+    margin-bottom: 20px;
+}
+input{
+    width: 90%;
+    padding: 15px;
+    background-color: #282d31;
+    border: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+}
 }
