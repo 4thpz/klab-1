@@ -306,6 +306,9 @@ textarea{
     background-color: #282d31;
     border: transparent;
     border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
 }
 input{
     width: 45%;
@@ -313,6 +316,9 @@ input{
     background-color: #282d31;
     border: transparent;
     border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
 }
 .fr p{
     position: relative;
@@ -375,13 +381,18 @@ input{
        padding: 10px;
         justify-content: space-between;
         position: fixed;
-        background-color: #fff;
+        background-color: #111418;
         width: 100%;
         z-index: 1;
+        color: #fff;
         
     }
+    .min a{
+        color: #909283;
+    }
     .bar{
-        padding-right: 20px;
+        padding-right: 30px;
+        font-size: 20PX;
     }
     .icons a{
         margin-left: 10px;
@@ -528,5 +539,24 @@ input{
     border: transparent;
     border-radius: 5px;
     margin-top: 10px;
+}
+.pro{
+    display: flex;
+    
+}.exp{
+    flex: 20%;
+    text-align: center;
+   
+ 
+}
+.project{
+    flex: 20%;
+    text-align: center;
+      
+}
+.tools{
+    flex: 20%;
+    text-align: center;
+        
 }
 }
