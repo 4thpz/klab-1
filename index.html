@@ -7,10 +7,11 @@
     <title>Placide ZIGIRA</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="2.jpg" type="image/x-icon">
 </head>
 <body>
     <div class="min">
-        <h2>Placide ZIGIRA</h2>
+        <a href=""><h2>Placide ZIGIRA</h2></a>
        
         <div class="icons">
             <a href="https://twitter.com/placzigira"><i class="fa-brands fa-twitter"></i></a>
@@ -20,8 +21,21 @@
             <a href="https://app.slack.com/client/T047DSTBLSJ/slack-connect/rimeto_profile/U047LCY2Q03"><i class="fa-brands fa-slack"></i></a>
         </div>
         <div class="bar">
-            <a href=""> <i class="fa-solid fa-bars"></i></a>
+            <a href="javascript:void(0)" id="bar"> <i class="fa-solid fa-bars"></i></a>
         </div>
+    </div>
+    <div class="navbar" id="navbar">
+      
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="abort()">Home</a></li><hr>
+                <li><a href="#about" onclick="abort()">About Me</a></li><hr>
+                <li><a href="#do" onclick="abort()">What I Do</a></li><hr>
+                <li><a href="#resume" onclick="abort()">Resume</a></li><hr>
+                <li><a href="#port" onclick="abort()">Portfolio</a></li><hr>
+                <li><a href="#contact" onclick="abort()">Contact</a></li>
+            </ul>
+        </nav> 
     </div>
     <div class="fixed">
         <img src="2.jpg" alt="">
@@ -32,7 +46,7 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#do">What I Do</a></li>
                 <li><a href="#resume">Resume</a></li>
-                <li><a href="">Portfolio</a></li>
+                <li><a href="#port">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -52,7 +66,7 @@
      <h2>Welcome</h2>
    <h1>I'm a Developer.</h1>
    <p>Based In Kigali, RWANDA.</p>
-   <button>Hire Me</button>
+   <button><a href="#contact"> Hire Me</a></button>
         </div>
     </div>
      <!-- Home Page Section  -->
@@ -242,12 +256,17 @@
             </div>
             <div class="msg">
           <h1>SEND US A NOTE</h1>
-          <input type="text" name="" id="" placeholder="Name">
-          <input type="email" name="" id="" placeholder="Email"><br>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Tell us more about your needs...."></textarea>
-          <button>Send Message</button>
+          <input type="text" name="" id="name" placeholder="Name">
+         
+          <input type="email" name="" id="email" placeholder="Email"><br>
+          <p id="em"></p> <p id="nm"></p>
+          <textarea name="" id="msg" cols="30" rows="10" placeholder="Tell us more about your needs...."></textarea><br>
+          <p id="tex"></p>
+          <button onclick="validate()">Send Message</button>
+          
             </div>
         </div>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>

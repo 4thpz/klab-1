@@ -3,12 +3,28 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+#em{
+    color: red;
+
+}
+#nm{
+    color: red;
+    
+}
+#tex{
+    color: red;
+    
+}
 .min{
     display: none;
 }
+#navbar{
+    display: none;
+}
+
 .fixed img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
    margin: 20px;
     border: 10px solid #343a40;
@@ -33,16 +49,16 @@
     color: #20C997;
 }
 ul li{
-    padding-top: 30px;
+    padding-top: 45px;
 }
 .platform{
    position: absolute;
    bottom: 10px;
-   left: 10%;
+   left: 13%;
    
 }
 .platform a{
-    padding-left: 20px;
+    padding-left: 15px;
 }
 .home{
   width: 80%;
@@ -264,6 +280,7 @@ margin-top: 10px;
     padding: 20px;
     height: 35%;
     border-radius: 10px;
+    padding-bottom: 40px;
 }
 .back h4{
     color: #20C997;
@@ -295,7 +312,7 @@ color: #fff;
     color: #fff;
 }
 .add{
-    width: 20%;
+    width: 30%;
 }
 .msg{
     width: 80%;
@@ -308,7 +325,7 @@ textarea{
     border-radius: 5px;
     color: #fff;
     padding: 10px;
-    font-size: 20px;
+    font-size: 13px;
 }
 input{
     width: 45%;
@@ -318,7 +335,7 @@ input{
     border-radius: 5px;
     color: #fff;
     padding: 10px;
-    font-size: 20px;
+    font-size: 13px;
 }
 .fr p{
     position: relative;
@@ -394,26 +411,30 @@ input{
         padding-right: 30px;
         font-size: 20PX;
     }
+    .bar a{
+        cursor: pointer;
+    }
     .icons a{
         margin-left: 10px;
     }
-    .min h2{
+    .min a h2{
         font-size: 16px;
+        text-decoration: none;
+        color: #fff;
     }
     .small{
         display: block;
-        background-color: #343a40;
+        background-color: #111418;
         padding-bottom: 20%;
     }
     .small img{
-        height: 313px;
-        width: 313px;
+        height: 200px;
+        width: 190px;
+       
         border-radius: 50%;
-        border-bottom: 15px solid gray;
-        border-right: 15px solid gray;
-        border-top: 15px solid gray;
-        margin-left: 10%;
-        
+        border: 15px solid #343a40;
+        margin-left: 5%;
+        margin-bottom: 5%;
     }
     .home{
         display: none;
@@ -539,6 +560,10 @@ input{
     border: transparent;
     border-radius: 5px;
     margin-top: 10px;
+    font-size: 13px;
+}
+textarea{
+    font-size: 16px;
 }
 .pro{
     display: flex;
@@ -559,4 +584,173 @@ input{
     text-align: center;
         
 }
+.navbar{
+    background-color: rgb(17, 17, 17);
+   position: fixed;
+   width: 100%;
+   margin-top: 1%;
+   padding-bottom: 3%;
+   transition: 0.5s ;
+   z-index: 1;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+  
+}
+.navbar ul li{
+   
+   padding-top: 20px;
+   padding-bottom: 10px;
+}
+.navbar hr{
+    border: 0.1px solid gray;
+    
+}
+.navbar button{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    font-size: 32px;
+   cursor: pointer;
+   z-index: 1;
+}
+}
+/* Tablet Mode */
+@media screen and (min-width:667px) and (max-width:1023px){
+    .fixed img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+       margin: 20px;
+        border: 10px solid #343a40;
+    }
+    .platform{
+        position: absolute;
+        bottom: 10px;
+        left: 2%;
+        
+     }
+     .platform a{
+        padding-left: 10px;
+    }
+    .fixed h2{
+        color: #fff;
+        font-size: 20px;
+    }
+    ul li{
+        padding-top: 50px;
+    }
+    .abhe h1{
+        font-size: 100px;
+        text-align: center;
+        color: #282d31;
+        user-select: none;
+        font-family: sans-serif;
+        padding-top: 10%;
+    }
+    .abhe h2{
+        position: relative;
+        top: -80px;
+        font-size: 32px;
+        text-align: center;
+        color: #fff;
+        
+       
+    }
+    .abhe hr{
+        position: relative;
+        top: -78px;
+      width: 10%;
+      margin: auto;
+     border: 2px solid #20C997;
+    }
+    .dohe h1{
+        font-size: 100px;
+        text-align: center;
+        color: #3e4449;
+        user-select: none;
+        font-family: sans-serif;
+        padding-top: 5%;
+    }
+    .dohe h2{
+        position: relative;
+        top: -100px;
+        font-size: 32px;
+        text-align: center;
+        color: #fff;
+        
+       
+    }
+    .msg{
+        width: 70%;
+    }
+    .add{
+        width: 40%;
+    }
+    textarea{
+        width: 100%;
+        margin-top: 20px;
+        background-color: #282d31;
+        border: transparent;
+        border-radius: 5px;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+    }
+    input{
+        width: 100%;
+        margin-top: 20px;
+        background-color: #282d31;
+        border: transparent;
+        border-radius: 5px;
+        color: #fff;
+        
+        font-size: 16px;
+    }
+    .port{
+       
+        background-color: #343a40;
+       padding-bottom: 20px;
+    }
+    .portmain{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+    }
+    .ll{
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 10px;
+      margin-left: 10px;
+    }
+    .ll img{
+        margin-top: 8px;
+        width: 110%;
+        vertical-align: middle;
+        border-radius: 5px;
+    }
+   
+    .hig{
+        background-color: #dc3545;
+        color: #fff;
+        padding: 3px;
+        width: 50px;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+        top: -10px;
+    }
+    
+    .back{
+        background-color: #111418;
+        color: #fff;
+        margin-top: 20px;
+        padding: 20px;
+        height: 35%;
+        border-radius: 10px;
+        padding-bottom: 40px;
+    }
 }
