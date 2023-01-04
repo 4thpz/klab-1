@@ -15,12 +15,18 @@
     color: red;
     
 }
+#te{
+    color: red;
+    
+}
+#lst{
+    color: red;
+    
+}
 .min{
     display: none;
 }
-#navbar{
-    display: none;
-}
+
 
 .fixed img{
     height: 150px;
@@ -78,6 +84,10 @@ ul li{
     font-size: 52px;
     margin-top: 20px;
     font-weight: bold;
+}
+.homeco a{
+    text-decoration: none;
+    color: #fff;
 }
 .homeco button{
     padding: 10px 40px;
@@ -315,7 +325,7 @@ color: #fff;
     width: 30%;
 }
 .msg{
-    width: 80%;
+    width: 70%;
 }
 textarea{
     width: 100%;
@@ -336,6 +346,14 @@ input{
     color: #fff;
     padding: 10px;
     font-size: 13px;
+    outline: none;
+}
+input{
+    -webkit-box-shadow:0 0 0 30px #282d31 inset !important;
+   -webkit-text-fill-color: #fff;
+}
+input[type= submit]{
+    cursor: pointer;
 }
 .fr p{
     position: relative;
@@ -391,6 +409,41 @@ input{
 .small{
     display: none;
 }
+.navbar{
+    background-color: rgb(17, 17, 17);
+   position: fixed;
+   width: 100%;
+   margin-top: 1%;
+   padding-bottom: 3%;
+   transition: 0.5s ;
+   z-index: 1;
+  display: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+  margin-left: 30px;
+}
+.navbar ul li{
+   
+   padding-top: 20px;
+   padding-bottom: 10px;
+   list-style: none;
+}
+.navbar hr{
+    border: 0.1px solid gray;
+    margin-left: 30px;
+}
+.navbar button{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    font-size: 32px;
+   cursor: pointer;
+   z-index: 1;
+}
 @media screen and (max-width:767px){
     /* Home Responsive */
     .min{
@@ -405,7 +458,8 @@ input{
         
     }
     .min a{
-        color: #909283;
+        color: #fff;
+        text-decoration: none;
     }
     .bar{
         padding-right: 30px;
@@ -417,8 +471,8 @@ input{
     .icons a{
         margin-left: 10px;
     }
-    .min a h2{
-        font-size: 16px;
+    .min h2{
+        font-size: 14px;
         text-decoration: none;
         color: #fff;
     }
@@ -436,6 +490,9 @@ input{
         margin-left: 5%;
         margin-bottom: 5%;
     }
+    .small h1{
+        font-size: 35px;
+    }
     .home{
         display: none;
         margin-left: 0;
@@ -447,6 +504,13 @@ input{
         padding-top: 20%;
         text-align: center;
       }
+      .homeco a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .homeco button{
+        background-color: #20C997;
+}
 .about{
     margin-left: 0;
 }
@@ -592,6 +656,7 @@ textarea{
    padding-bottom: 3%;
    transition: 0.5s ;
    z-index: 1;
+   margin-left: 30px;
 }
 .navbar a{
     text-decoration: none;

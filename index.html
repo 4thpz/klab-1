@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="min">
-        <a href=""><h2>Placide ZIGIRA</h2></a>
+        <h2><a href="#small">Placide ZIGIRA</a></h2>
        
         <div class="icons">
             <a href="https://twitter.com/placzigira"><i class="fa-brands fa-twitter"></i></a>
@@ -24,11 +24,12 @@
             <a href="javascript:void(0)" id="bar"> <i class="fa-solid fa-bars"></i></a>
         </div>
     </div>
-    <div class="navbar" id="navbar">
+    <!-- Navbar In Responsive -->
+    <div class="navbar" id="navbar" id="min">
       
         <nav>
             <ul>
-                <li><a href="#home" onclick="abort()">Home</a></li><hr>
+                <li><a href="#small" onclick="abort()">Home</a></li><hr>
                 <li><a href="#about" onclick="abort()">About Me</a></li><hr>
                 <li><a href="#do" onclick="abort()">What I Do</a></li><hr>
                 <li><a href="#resume" onclick="abort()">Resume</a></li><hr>
@@ -60,7 +61,7 @@
         </div>
     </div>
     <!-- Min Devices -->
-    <div class="small">
+    <div class="small" id="small">
         <div class="homeco">
             <img src="2.jpg" alt="">
      <h2>Welcome</h2>
@@ -76,7 +77,7 @@
     <h2>Welcome</h2>
    <h1>I'm a Developer.</h1>
    <p>Based In Kigali, RWANDA.</p>
-   <button>Hire Me</button>
+   <button > <a href="#contact">Hire Me</a></button>
  
    </div>
     </section>
@@ -256,14 +257,19 @@
             </div>
             <div class="msg">
           <h1>SEND US A NOTE</h1>
-          <input type="text" name="" id="name" placeholder="Name">
-         
-          <input type="email" name="" id="email" placeholder="Email"><br>
-          <p id="em"></p> <p id="nm"></p>
-          <textarea name="" id="msg" cols="30" rows="10" placeholder="Tell us more about your needs...."></textarea><br>
-          <p id="tex"></p>
-          <button onclick="validate()">Send Message</button>
+          <form action="mailto:placzigira@gmail.com" id="form" onsubmit="formValidation(event)">
+          <input type="text" name="" id="name" placeholder="Name" >
           
+          <input type="text" name="" id="email" placeholder="Email"><br>
+          
+          <p id="tex"></p>
+          <p id="te"></p>
+          <textarea name="" id="msg" cols="30" rows="10" placeholder="Tell us more about your needs...."></textarea><br>
+          <p id="lst"></p>
+          <input type="submit" value="Send A Message">
+         
+        </form>
+        
             </div>
         </div>
     </section>

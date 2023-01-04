@@ -1,33 +1,71 @@
 const bar= document.getElementById('bar')
 const navBar= document.getElementById("navbar")
-const Email= document.getElementById("email")
-const Name= document.getElementById("name")
-const Em= document.getElementById("em")
-const Nm= document.getElementById("nm")
-const Tex= document.getElementById("tex")
+const resp= document.getElementById("min")
 
+const Tex= document.getElementById("tex")
+const Te= document.getElementById("te")
+const lst= document.getElementById("lst")
+
+let borderName= document.getElementById("name")
+let borderEmail= document.getElementById("email")
+let borderMsg= document.getElementById("msg")
 bar.addEventListener("click", function(){
     navBar.style.display="block"
 });
 function abort(){
     navBar.style.display="none"
 }
-function validate(){
-    const re= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
-if(!Email.value.match(re))
+
+function formValidation(e){
+    e.preventDefault();
+  const Form= document.getElementById('form')
+    const Emre= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    const Name= Form[0].value;
+    const Email= Form[1].value;
+    const Msg= Form[2].value;
+   if(Name=== ""  )
    {
-     Em.innerHTML= "Invalid Email"
+    Tex.innerHTML= "Please Name Can't Be Empty!";
+    borderName.style.border= " 1px solid red"
+    
+   }else if( Name.length < 6)
+   {
+    Tex.innerHTML= " Name Must Have 6 Character Atleast!";
+    
+   }else if(Email=="")
+   {
+    Tex.innerHTML= "";
+    borderName.style.border= " 1px solid green"
+    Te.innerHTML= "Email Can't Be Empty!";
+    borderEmail.style.border= " 1px solid red"
    }
-   else if(Email.value.match(re))
-   {
-     Em.innerHTML= " "
-   }
-   else if(Name.value== " ")
-   {
-    Nm.innerHTML= "Please This Field Must Be Filled!"
+   else if(!Emre.test(Email)){
+    Tex.innerHTML= "";
+    Te.innerHTML= "Please Provide A Valid Email!";
+    borderEmail.style.border= " 1px solid red"
+   }else if(Msg== "")
+   { Te.innerHTML= "";
+   Tex.innerHTML= "";
+    lst.innerHTML= "Message Fieldd Can't Go Blank!";
+    borderEmail.style.border= " 1px solid green"
+    borderName.style.border= " 1px solid green"
+    borderMsg.style.border= " 1px solid red"
+   }else if(Msg.length < 30){
+    Te.innerHTML= "";
+    Tex.innerHTML= "";
+    lst.innerHTML= "Message Fieldd Must Atleast Have 30 Characters";
+    borderEmail.style.border= " 1px solid green"
+    borderName.style.border= " 1px solid green"
+    borderMsg.style.border= " 1px solid red"
    }
    else{
-    Tex.innerHTML= "Please This Field Must Be Filled!"
+    Tex.innerHTML= "";
+    lst.innerHTML= "";
+    borderEmail.style.border= " 1px solid green"
+    borderName.style.border= " 1px solid green"
+    borderMsg.style.border= " 1px solid green"
    }
+
 }
